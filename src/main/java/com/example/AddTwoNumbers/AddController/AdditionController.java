@@ -13,11 +13,11 @@ public class AdditionController
 {
     @PostMapping("/add")
     @ResponseBody
-    public AdditionResult addNumbers(@RequestBody Addition addition)
+    public Addition addNumbers(@RequestBody Addition addition)
     {
-        AdditionResult result = new AdditionResult();
-        result.setNumber1(addition.getNum1());
-        result.setNumber2(addition.getNum2());
+        Addition result = new Addition();
+        result.setNum1(addition.getNum1());
+        result.setNum2(addition.getNum2());
 
         int addResult = AdditionUtility.add(addition.getNum1(), addition.getNum2());
         result.setSum(addResult);

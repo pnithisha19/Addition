@@ -3,6 +3,8 @@ package com.example.AddTwoNumbers.domain;
 public class Addition {
     private int num1;
     private int num2;
+
+    private int sum;
     public int getNum1()
     {
         return num1;
@@ -18,5 +20,13 @@ public class Addition {
     public void setNum2(int num2)
     {
         this.num2 = num2;
+    }
+
+    public int getSum() {
+        return sum;
+    }
+
+    public void setSum(int sum) {
+        this.sum = sum;
     }
 }
